@@ -1,0 +1,9 @@
+/* color palette variables */
+
+:root {
+    --primary-color: #2C3531; 
+    --secondary-color: #116466; 
+    --tertiary-color: #D9B08C;
+    --quarternary-color: #FFCB9A; 
+    --quinary-color: #D1E8E2; 
+}
