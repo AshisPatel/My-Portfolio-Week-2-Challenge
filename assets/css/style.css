@@ -150,12 +150,64 @@ header nav ul li a {
     color: var(--quinary-color);
 }
 
+/* Header navbar style ends */
 
+/* Hero style starts */
 
+.stars {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg);
+    background-position-x: center;
+    background-size: cover; 
+    animation: animateBg 50s linear infinite; 
+}
 
+@keyframes animateBg {
+    0%, 100% 
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+}
 
-/* Project Dropdown container used to position content */
+span {
+    position: absolute; 
+    width: 4px; 
+    height: 4px; 
+    background: #fff;
+    top: 50%;
+    left: 50%; 
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite; 
+}
 
+span::before {
+    content: "";
+    position: absolute; 
+    top: 50%;
+    width: 300px;
+    height: 1px; 
+    background: linear-gradient(90deg,#fff,transparent);
+    transform: translateY(-50%);
+}
 
-/* Project Dropdown content */
-
+@keyframes animate {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1000px);
+    }
+}
