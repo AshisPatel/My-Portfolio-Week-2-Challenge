@@ -151,11 +151,41 @@ header nav ul li a {
 }
 
 
+/* Header/navbar styles end */
 
+/* Hero Style Starts */
 
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
 
-/* Project Dropdown container used to position content */
+.particles {
+    position: relative; 
+    width: 100%;
+    height: 500px;  
+    border: 1px solid red; 
+}
 
+.particles span {
+    position: absolute;
+    top: calc (2px * var(--i));
+    right: calc (2px * var(--i));
+    bottom: calc (2px * var(--i));
+    left: calc (2px * var(--i));
+}
 
-/* Project Dropdown content */
-
+.particles span::before {
+    content: "";
+    position: absolute;
+    top: 15rem; 
+    left: 10rem; 
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;  
+}
