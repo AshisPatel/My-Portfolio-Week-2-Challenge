@@ -12,6 +12,7 @@ html {
     --quarternary-color: #d2c1b5; 
     --quinary-color: #d28e5f; 
     --side-pad: 1rem; 
+    --test: 1px solid red; 
 }
 
 *,
@@ -101,7 +102,7 @@ header nav ul li {
     box-shadow: 0 0 10px var(--quinary-color);
     background-color: var(--secondary-color);
     border-radius: 0.2rem; 
-    width: 12rem; 
+    width: 15rem; 
     padding: 1rem; 
     display: flex; 
     flex-direction: column; 
@@ -317,6 +318,17 @@ header nav ul li a {
 /* Hero Section Style End */
 
 /* About me Section Style start */
+.personal{
+    display:flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;   
+    width: 100%; 
+    height: 500px; 
+    padding-top: 2rem; 
+    border-top: 3px solid var(--quinary-color); 
+    border-bottom: 3px solid var(--quinary-color); 
+}
 
 .section-title {
     font-size: 50px; 
@@ -329,33 +341,42 @@ header nav ul li a {
     border-radius: 0.5rem; 
     width: 10%;
     margin-left: var(--side-pad);
-    margin-top: auto;
-    margin-bottom: auto; 
+    text-shadow: 2px 2px 4px var(--quarternary-color); 
 }
 
-.personal{
-    display:flex;
-    align-items: flex-start; 
-    justify-content: start;
-    flex-wrap: wrap;  
-    width: 100%; 
-    height: 500px; 
-    padding-top: 2rem; 
-    border-top: 3px solid var(--quinary-color); 
-    border-bottom: 3px solid var(--quinary-color); 
+.about-me-content {
+    display: flex;
+    justify-content: space-around; 
+    align-items:center; 
+    width: 80%; 
 }
 
 .personal img {
     width: 281px;
     height: 322px; 
     border-radius: 0.5rem;
-    margin: auto 5rem; 
+    border: 3px solid var(--quinary-color);
+    box-shadow: 0px 0px 5px var(--quinary-color);  
+}
+
+.panel {
+    border: 5px solid var(--quinary-color);
+    box-shadow: 0px 0px 15px var(--quarternary-color); 
+    border-radius: 1rem; 
+}
+
+.personal .panel {
+    display: flex; 
+    justify-content: space-around; 
+    overflow: auto; 
+    width: 60%; 
+    padding: 20px;  
 }
 
 .personal-info {
     margin: auto 0;  
     font-size: 20px; 
-    width: 25%; 
+    width: 50%; 
 }
 
 .personal-info a {
@@ -368,8 +389,8 @@ header nav ul li a {
     color: var(--quarternary-color);
 }
 
-.qs {
-   margin: auto 5rem; 
+.qs { 
+   margin-left: 5rem; 
    font-size: 20px;  
 }
 
@@ -389,3 +410,9 @@ header nav ul li a {
 .qs-list li {
     margin-left: 2rem; 
 }
+
+/*About me section style end */
+
+/*Projects section style start */
+
+
