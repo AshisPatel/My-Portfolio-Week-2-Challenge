@@ -11,6 +11,7 @@ html {
     --tertiary-color: #8c7b73;
     --quarternary-color: #d2c1b5; 
     --quinary-color: #d28e5f; 
+    --side-pad: 1rem; 
 }
 
 *,
@@ -54,9 +55,9 @@ header {
 
 header h1 {
     font-weight: bold; 
-    font-size: 36px; 
+    font-size: 50px; 
     text-shadow: 0 0 10px rgba(0,0,0,0.8);
-    margin-left: 1rem; 
+    margin-left: var(--side-pad); 
     cursor: pointer;
     transition: color 250ms ease-in; 
 }
@@ -90,7 +91,7 @@ header nav ul li {
     position: relative; 
     padding: 1.5rem 1rem; 
     cursor: pointer; 
-    font-size: 20px;   
+    font-size: 25px;   
 }
 
 .p-dropdown {
@@ -296,13 +297,13 @@ header nav ul li a {
     
 }
 .hero-content h2 {
-    font-size: 80pt; 
+    font-size: 100px; 
     margin-bottom: 4rem; 
 }
 
 .hero-content p {
     line-height: 1.5; 
-    font-size: 20pt; 
+    font-size: 30px; 
     text-align: center; 
 }
 
@@ -310,4 +311,81 @@ header nav ul li a {
     
     display:inline-block; 
     font-weight: bold; 
+}
+
+/* Hero Banner Style End */
+/* Hero Section Style End */
+
+/* About me Section Style start */
+
+.section-title {
+    font-size: 50px; 
+    text-align: right;  
+    font-weight: bold;
+    padding-right: 1rem; 
+    padding-bottom: 0.2rem; 
+    border-right: 5px solid var(--quarternary-color);
+    border-bottom: 5px solid var(--quarternary-color);
+    border-radius: 0.5rem; 
+    width: 10%;
+    margin-left: var(--side-pad);
+    margin-top: auto;
+    margin-bottom: auto; 
+}
+
+.personal{
+    display:flex;
+    align-items: flex-start; 
+    justify-content: start;
+    flex-wrap: wrap;  
+    width: 100%; 
+    height: 500px; 
+    padding-top: 2rem; 
+    border-top: 3px solid var(--quinary-color); 
+    border-bottom: 3px solid var(--quinary-color); 
+}
+
+.personal img {
+    width: 281px;
+    height: 322px; 
+    border-radius: 0.5rem;
+    margin: auto 5rem; 
+}
+
+.personal-info {
+    margin: auto 0;  
+    font-size: 20px; 
+    width: 25%; 
+}
+
+.personal-info a {
+    text-decoration: underline; 
+    color: var(--quinary-color);
+    transition: color 200ms ease-in; 
+}
+
+.personal-info a:hover {
+    color: var(--quarternary-color);
+}
+
+.qs {
+   margin: auto 5rem; 
+   font-size: 20px;  
+}
+
+
+/* style for main list of qualifications and skills */
+
+
+
+.qs h3 {
+    margin-bottom: 0.5rem; 
+}
+.qs-list {
+    margin-left: 2rem;
+    line-height: 1.5;   
+}
+
+.qs-list li {
+    margin-left: 2rem; 
 }
