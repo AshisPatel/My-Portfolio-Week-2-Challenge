@@ -489,7 +489,6 @@ header nav ul li a {
 /* generic class for project description boxes */ 
 .project-descriptor {
     position: absolute; 
-    /* margin: auto 0;   make the descriptions go to middle? Auto doesn't work  */
     top: 50%; 
     transform: translateY(-50%); 
     width: 20%; 
@@ -625,6 +624,15 @@ footer {
         visibility: hidden; 
     }
 
+    .hero-content {
+        height: 400px; 
+    }
+
+    .stars {
+        height: 400px;
+    }
+
+
     footer {
         font-size: 20px; 
     }
@@ -741,6 +749,14 @@ footer {
         font-size: 15px; 
     }
 
+    .hero-content {
+        height: 300px; 
+    }
+
+    .stars {
+        height: 300px;
+    }
+
     footer {
         font-size: 15px; 
     }
@@ -810,10 +826,6 @@ footer {
     .contact-info {
         display:block;
     }
-
-    /* #coffee-crawl p , #pathfinder p{
-        font-size: 7px; 
-    } */
 
     address ul {
         width: 100%; 
