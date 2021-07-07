@@ -666,7 +666,6 @@ footer {
     .personal-info {
         font-size: 15px; 
         width: 100%; 
-        
     }
 
     .personal .panel {
@@ -700,19 +699,23 @@ footer {
        height: 40px;  
     }
 
+    .project-descriptor {
+        width: 40%;
+    }
+
     .project-descriptor h3 {
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bolder;   
     }
     
     .project-descriptor h4 {
         font-weight:bold; 
-        font-size: 12px; 
+        font-size: 17px; 
     }
     
     .project-descriptor p {
         margin-top: 3px; 
-        font-size: 10px; 
+        font-size: 15px; 
         line-height: 1.5;
     }
     .contact-info {
@@ -785,28 +788,32 @@ footer {
        height: 60px;  
     }
 
+    .project-descriptor {
+        width: 60%; 
+    }
+
     .project-descriptor h3 {
-        font-size: 12px;
+        font-size: 20px;
         font-weight: bolder;   
     }
     
     .project-descriptor h4 {
         font-weight:bold; 
-        font-size: 12px; 
+        font-size: 17px; 
     }
     
     .project-descriptor p {
         margin-top: 3px; 
-        font-size: 8px; 
+        font-size: 15px; 
         line-height: 1.5;
     }
     .contact-info {
         display:block;
     }
 
-    #coffee-crawl p , #pathfinder p{
+    /* #coffee-crawl p , #pathfinder p{
         font-size: 7px; 
-    }
+    } */
 
     address ul {
         width: 100%; 
