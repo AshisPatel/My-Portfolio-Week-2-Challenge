@@ -137,7 +137,7 @@ header nav ul li:hover::before{
 
 .p-dropdown li {
     list-style: none;
-    padding: 0.6rem 1rem;
+    padding: 0.7rem 1rem;
     border-radius: 0.2rem;
     color: var(--quarternary-color); 
     transition: background-color 200ms ease-in-out;
