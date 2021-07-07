@@ -682,6 +682,16 @@ footer {
         font-size: 15px;  
      }
 
+     .qs-list {
+        margin-left: 0.75rem;
+        line-height: 1.5;   
+    }
+    
+    .qs-list li {
+        margin-left: 1rem; 
+    }
+    
+
      .projects {
         justify-content: center;
     }
