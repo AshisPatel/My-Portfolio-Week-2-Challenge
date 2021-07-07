@@ -640,7 +640,7 @@ footer {
     .section-title {
         font-size: 25px; 
         text-align: center;  
-        padding-right: 1rem; 
+        padding-right: 0; 
         padding-bottom: 0.2rem; 
         border-bottom: 3px solid var(--quarternary-color);
         border-right: 0;
@@ -649,6 +649,7 @@ footer {
         overflow: auto; 
         display: block;  
         margin: 0 auto 20px auto; 
+        text-shadow: 1px 1px 4px var(--quarternary-color); 
     }
 
     .about-me-content { 
@@ -656,6 +657,10 @@ footer {
         border: 5px solid var(--quinary-color);
         box-shadow: 0px 0px 15px var(--quarternary-color); 
         border-radius: 1rem;
+    }
+
+    .personal img {
+        border: 0; 
     }
 
     .personal-info {
