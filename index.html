@@ -29,8 +29,8 @@
                 <li>
                     <a href="#proj">Projects</a>
                     <ul class="p-dropdown">
-                        <li>Completed</li>
-                        <li>Development</li>
+                        <li><a href="#c-proj">Completed</a></li>
+                        <li><a href="#d-proj">Development</a></li>
                     </ul>
                 </li> <!-- Add drop down menu for Complete & Planned -->
                 <li>
@@ -105,58 +105,73 @@
 
 
     <!-- Project Section -->
-    <section id= "proj" class= "projects">
+    <section id= "proj" class= "all-projects">
         <!-- Completed project first -->
-        <div class="completed-projects">
+        <div class="projects">
             <h2 id="c-proj" class="section-title">Completed Projects</h2>
+            <div class="projects-list">
             <!-- Entire project panel will lead to run-buddy webpage -->
-                <article id= "run-buddy" class = "project panel">
-                    <a href="https://ashispatel.github.io/Run-Buddy/" target="_blank">
-                        <div class="project-descriptor">
-                            <h3>Run-Buddy</h3>
-                            <h4>HTML/CSS</h4>
-                            <p>
-                                Front-end portion of a website for a personal training company. Developed using modern HTML & CSS techniques, such as flexbox. 
-                            </p>
-                        </div>
-                    </a>
-                </article>
+                <a href="https://ashispatel.github.io/Run-Buddy/" target="_blank">
+                    <article id= "run-buddy" class = "project panel">
+                        
+                            <div class="project-descriptor">
+                                <h3>Run-Buddy</h3>
+                                <h4>HTML/CSS</h4>
+                                <p>
+                                    Front-end portion of a website for a personal training company. Developed using modern HTML & CSS techniques, such as flexbox. 
+                                </p>
+                            </div>
+                    </article>
+                </a>
+            </div>
         </div>
 
-        <h2 id="d-proj" class="section-title">Developing Projects</h2>
-        <article class= "project">
-            <h4>Calorie</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere pariatur eaque incidunt nulla vitae enim deleniti tenetur repellendus. Veritatis numquam voluptatibus itaque ea ex deserunt, fugit iusto dolorum consectetur.
-            </p>
-        </article>
-        <!-- Future projects here -->
+        <div class="projects">
+            <h2 id="d-proj" class="section-title">Developing Projects</h2>
+            <div class= "projects-list">
+                <article id = "calorie" class= "project panel">
+                    <!-- Insert link to a "In DEVELOPMENT! page for each project here"-->
+                    <div class = "project-descriptor">
+                        <h3>Calorie</h3>
+                        <p>
+                            Trying to start a physical change? Calorie is a web app that utilizes studied meterics to help recommend you both a meal & workout plan to help you meet your goals. 
+                        </p>
+                    </div>
+                </article>
+                <!-- Future projects here -->
 
-        <article class= "project">
-            <h4>Pathfinder Character Sheet</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dolore, optio rem obcaecati, inventore blanditiis tempora consequuntur et enim nulla, officia sequi dignissimos labore assumenda illum commodi modi iusto tempore.
-            </p>
-        </article>
+                <article id= "pathfinder" class= "project panel">
+                    <div class = "project-descriptor">
+                        <h3>Pathfinder Character Sheet</h3>
+                        <p>
+                            Tired of having to scavenge the pathfinder wiki for your new class information after you've died the 10th time? Well I am, so I've
+                            decided to work on an automated character sheet for the Pathfinder RPG game!
+                        </p>
+                    </div>
+                </article>
 
-        <article class= "project">
-            <h4>Coffee Crawl</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio vitae maiores illo earum in, aut harum ea possimus odit doloremque blanditiis recusandae eligendi quasi ex voluptatum. Ad, ratione animi!
-            </p>
-        </article>
+                <article id= "coffee-crawl" class= "project panel">
+                    <div class = "project-descriptor">
+                        <h3>Coffee Crawl</h3>
+                        <p>
+                           The world of speciality coffee is daunting! Coffee Crawler is a web app that I plan to design that will help make
+                           speciality coffee approachable. Put in flavors that you like, and Coffee Crawl will recommend you coffee beans from certified roasters!
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
     <!-- Contact me section -->
-    <section id="contact-me" class="contact">
-        <div class= "contact-info">
-            <h2>Ashis Patel</h2>
+    <section class="contact">
+        <div class="contact-info">
+            <h2 id="contact-me" class = "section-title">Contact Me</h2>
             <address>
                 <ul>
-                    <li>email:<a href="">ashis.n.patel@gmail.com</a></li>
-                    <li>Linkedin:<a href="">my linked in link</a></li>
-                    <li>Github:<a href="">my github link</a></li>
-                    <li>Resume<a href="">my resume</a></li>
+                    <li><a href="mailto:ashis.n.patel@gmail.com" target="_blank"><img src="assets/images/Gmail.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ashisp/" target="_blank"><img src="./assets/images/LI-In-Bug.png"></a></li>
+                    <li><a href="https://github.com/AshisPatel" target="_blank"><img src="./assets/images/GitHub-Mark-Light-64px.png"></a></li>
                 </ul>
             </address>
         </div>

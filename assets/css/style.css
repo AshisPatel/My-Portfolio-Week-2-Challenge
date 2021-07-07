@@ -139,13 +139,23 @@ header nav ul li:hover::before{
     list-style: none;
     padding: 0.6rem 1rem;
     border-radius: 0.2rem;
+    color: var(--quarternary-color); 
     transition: background-color 200ms ease-in-out;
+    transition: color 200ms ease-in; 
+}
+
+.p-dropdown li a {
+    color: var(--quinary-color); 
     transition: color 200ms ease-in; 
 }
 
 .p-dropdown li:hover, .p-dropdown li:focus {
     background-color: var(--quinary-color);
     color: var(--primary-color);
+}
+
+.p-dropdown li a:hover {
+    color: var(--primary-color); 
 }
 
 header nav ul li a {
@@ -324,10 +334,8 @@ header nav ul li a {
     justify-content: space-between; 
     flex-wrap: wrap;   
     width: 100%; 
-    height: 500px; 
-    padding-top: 2rem; 
-    border-top: 3px solid var(--quinary-color); 
-    border-bottom: 3px solid var(--quinary-color); 
+    overflow: auto;  
+    padding: 2rem 0; 
 }
 
 /*section-title that should be re-used for each main section on webpage */ 
@@ -340,9 +348,11 @@ header nav ul li a {
     border-right: 5px solid var(--quarternary-color);
     border-bottom: 5px solid var(--quarternary-color);
     border-radius: 0.5rem; 
-    width: 15%; /* controls the length of the title edge-border */ 
+    width: 15%; /* controls the length of the title edge-border */
+    overflow: auto;  
     margin-left: var(--side-pad);
     text-shadow: 2px 2px 4px var(--quarternary-color); 
+    
 }
 
 .about-me-content {
@@ -364,7 +374,8 @@ header nav ul li a {
 .panel {
     border: 5px solid var(--quinary-color);
     box-shadow: 0px 0px 15px var(--quarternary-color); 
-    border-radius: 1rem; 
+    border-radius: 1rem;
+    cursor: pointer;  
 }
 
 /*fixing dimensions and spacing of panel in the about-me section*/ 
@@ -418,35 +429,48 @@ header nav ul li a {
 
 /*Style for completed project section*/
 
-.completed-projects {
+
+.projects {
     display:flex;
-    align-items: center; 
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-wrap: wrap;   
     width: 100%; 
-    height: 400px; 
-    padding-top: 2rem; 
+    overflow: auto; 
+    padding-top: 5rem; 
+    
+}
+
+.all-projects .section-title {
+    height: 150px; 
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
 }
 /* sets background image for only run-buddy project */ 
 #run-buddy {
     background-image: url(../images/run-buddy-bg.jpg);
+    height: 320px; /* first project is meant to be larger... */
 }
 
 
 /* generic class for all project panels */
 .project{
-    width: 80%;
     background-size: cover;
     background-position: 80%;
-    height: 85%; 
     margin-right: 20px; 
+    height: 280px; 
     position: relative;
     opacity: 0.7; 
-    transition: opacity 500ms ease-in;  
+    transition: opacity 500ms ease-in; 
+    margin-bottom: 30px;  
 
 }
 
-.project a {
+.projects-list a {
     display: block; 
     text-decoration: none; 
     color: inherit; 
@@ -460,9 +484,11 @@ header nav ul li a {
 /* generic class for project description boxes */ 
 .project-descriptor {
     position: absolute; 
-    margin: 75px 0; 
+    /* margin: auto 0;   make the descriptions go to middle? Auto doesn't work  */
+    top: 50%; 
+    transform: translateY(-50%); 
     width: 20%; 
-    height: 50%; 
+    overflow: auto; 
     background-color: var(--primary-color); 
     padding: 10px; 
     border-bottom-right-radius: 1rem; 
@@ -496,8 +522,77 @@ header nav ul li a {
     border: 2px solid var(--quinary-color); 
 }
 
+/* Style for developing projects section*/
 
+#calorie {
+    background-image:url(../images/calorie-bg.jpg); 
+}
 
+#pathfinder {
+    background-image:url(../images/pathfinder-bg.jpg); 
+}
+
+#coffee-crawl {
+    background-image:url(../images/coffee-bg.jpg); 
+}
 
 /*Projects section style end */
 
+
+/* Style for contact me section start */
+
+
+.contact-info {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+    width: 100%; 
+    overflow: auto; 
+    padding-top: 5rem; 
+}
+
+address {
+    margin: 7px 0px;
+}
+
+address ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5rem; 
+    margin: 0 35rem;  
+}
+
+address ul li {
+    list-style: none; 
+    position: relative;  
+}
+
+address img {
+    width: 100px; 
+    height: 100px;
+    border: 4px solid var(--quinary-color); 
+    border-radius: 100%; 
+}
+
+/* Style for contact me section end */ 
+
+/* Style for footer section start */
+footer {
+    background-color: var(--secondary-color);
+    font-size: 30px; 
+    text-align: center; 
+    font-weight: bold;
+    text-shadow: 0px 0px 3px var(--quarternary-color);  
+    margin-top: 30px; 
+    box-shadow: 0 -3px 10px var(--quinary-color); 
+}
+/* Style for footer end */
+
+/* Media Queries for smaller screens */
+
+@media screen and (max-width: 1200px) {
+
+
+}
