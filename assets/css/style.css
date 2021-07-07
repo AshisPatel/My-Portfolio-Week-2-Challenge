@@ -54,6 +54,11 @@ header {
     box-shadow: 0 0 10px var(--quinary-color);
 }
 
+header h1 a {
+    text-decoration: none; 
+    color: var(--quinary-color); 
+}
+
 header h1 {
     font-weight: bold; 
     font-size: 50px; 
@@ -63,7 +68,7 @@ header h1 {
     transition: color 250ms ease-in; 
 }
 
-header h1:hover, header h1:focus {
+header h1 a:hover, header h1 a:focus {
     color: var(--primary-color);
 }
 
