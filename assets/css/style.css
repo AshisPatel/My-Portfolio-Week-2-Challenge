@@ -457,7 +457,7 @@ header nav ul li a {
 }
 /* sets background image for only run-buddy project */ 
 #ds-homepage {
-    background-image: url(../images/DS-homepage-bg.JPG);
+    background-image: url(../images/DS-homepage-bg.png);
     height: 320px; /* first project is meant to be larger... */
 }
 
