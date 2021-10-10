@@ -12,7 +12,7 @@ My portfolio displays projects that I have completed as well as personal project
 * Jscript
 
 ## Website
-https://ashispatel.github.io/My-Portfolio-Week-2-Challenge/ 
+https://ashispatel.github.io/my-portfolio/
 
 ## End Note - A Thank You to the Reader 
 
