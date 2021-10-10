@@ -461,6 +461,12 @@ header nav ul li a {
     height: 320px; /* first project is meant to be larger... */
 }
 
+#gs-homepage {
+    background-image: url(../images/gs-bg.JPG);
+    height: 300px; /* first project is meant to be larger... */
+}
+
+
 
 /* generic class for all project panels */
 .project{
